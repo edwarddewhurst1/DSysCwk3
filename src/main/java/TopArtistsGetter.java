@@ -7,6 +7,7 @@ import org.json.JSONObject;
 // Use the Last.fm API to get a users
 public class TopArtistsGetter {
     public static JSONObject get(String lastfmusername) {
+        // Create a client object
         Client c = Client.create();
 
         // Compose the final URL we will be using
@@ -28,16 +29,10 @@ public class TopArtistsGetter {
         // Specify a ClientResponse object to accept the MIME type application/json
         ClientResponse r = wr.accept("application/json").get(ClientResponse.class);
 
-        // Get the response string
+        // Get a string of the response
         String out = r.getEntity(String.class);
 
-        // Serialise into a JSONObject
-        JSONObject jo = new JSONObject(out);
-
-        // DEBUG
-        //System.out.println(jo.toString(2));
-
-        // Return that JSONObject
-        return jo;
+        // Serialise the response string into a JSONObject and return it
+        return new JSONObject(out);
     }
 }
