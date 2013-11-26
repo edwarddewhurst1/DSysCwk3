@@ -3,13 +3,13 @@ import org.json.JSONArray;
 
 public class Main {
     public static void main(String args[]) {
-        JSONObject topArtistsjo = TopArtistsGetter.get("edwarddewhurst");
+        JSONObject topArtistsResponse = TopArtistsGetter.get("edwarddewhurst");
 
         // Extract the user's top (most played) artist...
         // See lastfmOutputExample.json for an example of the JSON returned by TopArtistsGetter
 
         // Extract the main "topartists" object from the JSON
-        JSONObject topArtists = topArtistsjo.getJSONObject("topartists");
+        JSONObject topArtists = topArtistsResponse.getJSONObject("topartists");
 
         // Extract the total number of artists contained in the JSON from the "@attr" object
         int numArtists = topArtists.getJSONObject("@attr").getInt("total");
@@ -24,9 +24,15 @@ public class Main {
 
         // For each artist...
         for (String name : artistNames) {
-            EventsGetter.get(name);
+            JSONArray eventsArray = EventsGetter.get(name.replaceAll(" ", "%20"));
+
+            System.out.println(String.format("===== %s =====", name));
+            System.out.println(String.format("%d events found", eventsArray.length()));
+            System.out.println();
+
+            if (eventsArray.length() > 0) {
+                HTMLWriter.write(eventsArray, name);
+            }
         }
-
-
     }
 }

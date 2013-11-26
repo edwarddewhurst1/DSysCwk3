@@ -2,7 +2,7 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
-import org.json.JSONObject;
+import org.json.JSONArray;
 
 // Use the Bandsintown API to get concert/event information
 public class EventsGetter {
@@ -10,7 +10,7 @@ public class EventsGetter {
     // This is a short URL to a Git repository containing this program
     private static String APP_ID = "http://git.io/uEW7HA";
 
-    public static JSONObject get(String artist) {
+    public static JSONArray get(String artist) {
         // Create a Jersey Client object
         Client c = Client.create();
 
@@ -29,10 +29,10 @@ public class EventsGetter {
         // Read as: "Get a ClientResponse from wr of the type application/json"
         ClientResponse r = wr.accept("application/json").get(ClientResponse.class);
 
-        // Get a string of the response
+        // Get a string of the response.
         String out = r.getEntity(String.class);
 
-        // Serialise the response string into a JSONObject and return it
-        return new JSONObject(out);
+        // Serialise the response string into a JSONArray and return it
+        return new JSONArray(out);
     }
 }
