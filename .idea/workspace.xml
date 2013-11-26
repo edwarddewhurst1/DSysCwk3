@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/HTMLWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/EventsGetter.java" afterPath="$PROJECT_DIR$/src/main/java/EventsGetter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DSysCwk3.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385412547265" ignored="false" />
-    <file path="/Main.java" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385460056461" ignored="false" />
+    <file path="/Main.java" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385460235193" ignored="false" />
     <file path="/TopArtistsGetter.java" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385423018799" ignored="false" />
     <file path="/EventsGetter.java" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385438952076" ignored="false" />
-    <file path="/Dummy.txt" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385454885961" ignored="false" />
+    <file path="/Dummy.txt" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385460097972" ignored="false" />
     <file path="/HTMLWriter.java" changelist="d41a66a7-00f2-4941-8d21-3fe9a7dbb6c9" time="1385460025561" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +85,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="55" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.86507934">
+            <state line="5" column="71" selection-start="191" selection-end="191" vertical-scroll-proportion="0.16865079">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -448,7 +446,11 @@
       <created>1385423186828</created>
       <updated>1385423186828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="most things implemented">
+      <created>1385460101586</created>
+      <updated>1385460101586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -539,7 +541,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented EventsGetter" />
+    <option name="LAST_COMMIT_MESSAGE" value="most things implemented" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -556,6 +558,7 @@
     <MESSAGE value="TESTY TEST TEST&#10;" />
     <MESSAGE value="Yeah, you commit all dat stuff.&#10;" />
     <MESSAGE value="Implemented EventsGetter" />
+    <MESSAGE value="most things implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -676,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="55" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.86507934">
+        <state line="5" column="71" selection-start="191" selection-end="191" vertical-scroll-proportion="0.16865079">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

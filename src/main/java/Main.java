@@ -3,7 +3,7 @@ import org.json.JSONArray;
 
 public class Main {
     public static void main(String args[]) {
-        JSONObject topArtistsResponse = TopArtistsGetter.get("edwarddewhurst");
+        JSONObject topArtistsResponse = TopArtistsGetter.get(args[0]);
 
         // Extract the user's top (most played) artist...
         // See lastfmOutputExample.json for an example of the JSON returned by TopArtistsGetter
